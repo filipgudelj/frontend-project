@@ -1,0 +1,154 @@
+.categories {
+  position: absolute;
+  left: 0px;
+  top: 49px;
+  width: 1602px;
+  height: 53px;
+  background: #4d4382;
+}
+.categories-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.categories-list-news {
+  display: flex;
+  align-items: flex-end;
+  width: 55px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 350px;
+  top: 15px;
+  z-index: 2;
+  text-align: center;
+}
+.categories-list-container-news {
+  position: absolute;
+  left: 330px;
+  top: 0px;
+  z-index: 0;
+  width: 96px;
+  height: 53px;
+  background: #299ec3;
+}
+.categories-list-business {
+  display: flex;
+  align-items: flex-end;
+  width: 120px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 443px;
+  top: 9px;
+}
+.categories-list-container-business {
+  position: absolute;
+  left: 426px;
+  top: 47px;
+  width: 132px;
+  height: 6px;
+  background: #ee6151;
+}
+.categories-list-sport {
+  display: flex;
+  align-items: flex-end;
+  width: 88px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 574px;
+  top: 9px;
+}
+.categories-list-container-sport {
+  position: absolute;
+  left: 555px;
+  top: 47px;
+  width: 100px;
+  height: 6px;
+  background: #84c14f;
+}
+.categories-list-life {
+  display: flex;
+  align-items: flex-end;
+  width: 68px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 671px;
+  top: 9px;
+}
+.categories-list-container-life {
+  position: absolute;
+  left: 653px;
+  top: 47px;
+  width: 81px;
+  height: 6px;
+  background: #5dcff3;
+}
+.categories-list-tech {
+  display: flex;
+  align-items: flex-end;
+  width: 78px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 749px;
+  top: 9px;
+}
+.categories-list-container-tech {
+  position: absolute;
+  left: 730px;
+  top: 47px;
+  width: 91px;
+  height: 6px;
+  background: #fcc44d;
+}
+.categories-list-travel {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  height: 24px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  left: 837px;
+  top: 9px;
+}
+.categories-list-container-travel {
+  position: absolute;
+  left: 819px;
+  top: 47px;
+  width: 113px;
+  height: 6px;
+  background: #a99765;
+}/*# sourceMappingURL=Categories.css.map */

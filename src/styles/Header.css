@@ -1,4 +1,117 @@
-li {
-  font-size: 50px;
-  font-weight: bold;
+.header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1602px;
+  height: 53px;
+  background-color: #252525;
+}
+.header-logo {
+  position: absolute;
+  left: 330px;
+  top: 0px;
+  width: 142px;
+  height: 53px;
+}
+.header-logo-symbol {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 63px;
+  height: 53px;
+  background-color: #333333;
+}
+.header-logo-symbol-img {
+  position: absolute;
+  left: 23px;
+  top: 15px;
+  width: 14px;
+  height: 21px;
+}
+.header-logo-name {
+  position: absolute;
+  left: 72px;
+  top: 16.5px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 27px;
+  color: #ffffff;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+.header-sub-nav {
+  position: absolute;
+  left: 948px;
+  top: 21px;
+  width: 245px;
+  height: 17px;
+}
+.header-sub-nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header-sub-nav-list-media {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  position: absolute;
+  left: 1px;
+  top: -6.5px;
+  width: 70px;
+  height: 27px;
+}
+.header-sub-nav-list-marketing {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  position: absolute;
+  left: 77px;
+  top: -6.5px;
+  width: 97px;
+  height: 27px;
+}
+.header-sub-nav-list-contact {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  position: absolute;
+  left: 183px;
+  top: -6.5px;
+  width: 83px;
+  height: 27px;
+}
+.header-search {
+  position: absolute;
+  right: 330px;
+  top: 0px;
+  width: 62px;
+  height: 53px;
+  background-color: #333333;
+}
+.header-search-img {
+  position: absolute;
+  left: 23px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=Header.css.map */
