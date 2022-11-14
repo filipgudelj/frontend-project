@@ -21,3 +21,10 @@
   font-size: 18px;
   line-height: 22px;
 }
+
+@mixin BigSliderFontStyle {
+  color: #eef6fa;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+}

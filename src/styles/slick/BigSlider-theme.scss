@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import "../mixins";
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  } @else {
+    @return url($slick-loader-path + $url);
+  }
+}
+
+@function slick-font-url($url) {
+  @if function-exists(font-url) {
+    @return font-url($url);
+  } @else {
+    @return url($slick-font-path + $url);
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 200px;
+  z-index: 2;
+  display: block;
+  width: 32px;
+  height: 50px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  line-height: 0px;
+  font-size: 0px;
+  &.slick-disabled:before {
+    opacity: $slick-opacity-not-active;
+  }
+  &:before {
+    font-family: $slick-font-family;
+    font-size: 20px;
+    line-height: 1;
+    color: $slick-arrow-color;
+    opacity: $slick-opacity-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.Slider {
+  position: relative;
+  top: 260px;
+  left: 330px;
+  width: 940px;
+  height: 425px;
+  &-description {
+    position: absolute;
+    bottom: 28px;
+    padding-left: 30px;
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 14px;
+      margin: 22px 0px;
+      &-date {
+        @include BigSliderFontStyle;
+        display: flex;
+        align-items: flex-end;
+        width: 110px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+      &-comments {
+        @include BigSliderFontStyle;
+        display: flex;
+        flex-direction: row;
+        width: 110px;
+        height: 14px;
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    &-title {
+      @include BigSliderFontStyle;
+      width: 558px;
+      height: 92px;
+      margin: 10px 0px;
+      font-size: 46px;
+      line-height: 44px;
+    }
+    &-btn {
+      width: 123px;
+      height: 33px;
+      background: rgba(0, 0, 0, 0.0001);
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+  }
+  &-img {
+    width: 940px;
+    height: 425px;
+  }
+}
+
+.slick-prev {
+  left: 28px;
+  background-image: url("../../images/PrevBtn.png");
+}
+
+.slick-next {
+  right: 28px;
+  background-image: url("../../images/NextBtn.png");
+}

@@ -1,6 +1,6 @@
-import "../styles/Header.scss";
 import Logo from "../images/Logo.png";
 import Search from "../images/Search.png";
+import "../styles/Header.scss";
 
 const Header = () => {
   return (
