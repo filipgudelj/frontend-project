@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 1602px;
+  height: 53px;
+  background-color: $primary-color;
+  &-logo {
+    display: flex;
+    flex-direction: row;
+    &-symbol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 330px;
+      width: 63px;
+      height: 53px;
+      background-color: $primary-color-light;
+      &:hover {
+        cursor: pointer;
+        transform: scale(0.8);
+        transition: all 0.5s;
+      }
+      &-svg {
+        width: 14px;
+        height: 21px;
+      }
+    }
+    &-name {
+      width: 100px;
+      height: 27px;
+      margin-top: 16.5px;
+      margin-right: 447px;
+      margin-bottom: 9.5px;
+      margin-left: 9px;
+      color: $font-color-white;
+      font-family: "Bitter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27px;
+      @include FontHoverStyle;
+    }
+  }
+  &-sub-nav {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &-media {
+        @include SubNavItemStyle;
+        width: 77px;
+        height: 27px;
+        margin-top: 14.5px;
+        margin-right: 6px;
+      }
+      &-marketing {
+        @include SubNavItemStyle;
+        width: 97px;
+        height: 27px;
+        margin-top: 14.5px;
+        margin-right: 9px;
+      }
+      &-contact {
+        @include SubNavItemStyle;
+        width: 83px;
+        height: 27px;
+        margin-top: 14.5px;
+      }
+      &-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 53px;
+        background-color: $primary-color-light;
+        &:hover {
+          cursor: pointer;
+          transform: scale(0.8);
+          transition: all 0.5s;
+        }
+        &-svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

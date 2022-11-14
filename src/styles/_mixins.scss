@@ -1,12 +1,19 @@
+@mixin FontHoverStyle {
+  &:hover {
+    cursor: pointer;
+    color: $font-color-hover;
+    transition: all 0.5s;
+  }
+}
+
 @mixin SubNavItemStyle {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
+  color: $font-color-white;
   font-family: "Varela Round";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
+  @include FontHoverStyle;
 }
 
 @mixin CategItemStyle($width) {
@@ -14,16 +21,17 @@
   align-items: flex-end;
   width: $width;
   height: 24px;
-  color: #ffffff;
+  color: $font-color-white;
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  @include FontHoverStyle;
 }
 
 @mixin BigSliderFontStyle {
-  color: #eef6fa;
+  color: $font-color-white;
   font-family: "Varela Round";
   font-style: normal;
   font-weight: 400;

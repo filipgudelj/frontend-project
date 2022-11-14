@@ -1,38 +1,34 @@
-@import "./mixins";
-
 .categories {
-  position: absolute;
-  left: 0px;
-  top: 49px;
+  position: relative;
   width: 1602px;
   height: 53px;
-  background: #4d4382;
+  background: $secondary-color;
   &-list {
     display: flex;
-    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    margin-left: 330px;
     padding: 0;
+    list-style: none;
     &-news {
       @include CategItemStyle(55px);
-      position: absolute;
-      left: 350px;
-      top: 15px;
       z-index: 2;
-      text-align: center;
+      margin: 15px 21px 14px 20px;
     }
     &-container-news {
       position: absolute;
       left: 330px;
       top: 0px;
-      z-index: 0;
       width: 96px;
       height: 53px;
       background: #299ec3;
     }
     &-business {
       @include CategItemStyle(120px);
-      position: absolute;
-      left: 443px;
-      top: 9px;
+      z-index: 2;
+      margin: 6px 11px 20px 20px;
     }
     &-container-business {
       position: absolute;
@@ -44,9 +40,8 @@
     }
     &-sport {
       @include CategItemStyle(88px);
-      position: absolute;
-      left: 574px;
-      top: 9px;
+      z-index: 2;
+      margin: 6px 9px 20px 0px;
     }
     &-container-sport {
       position: absolute;
@@ -58,9 +53,8 @@
     }
     &-life {
       @include CategItemStyle(68px);
-      position: absolute;
-      left: 671px;
-      top: 9px;
+      z-index: 2;
+      margin: 6px 10px 20px 0px;
     }
     &-container-life {
       position: absolute;
@@ -72,9 +66,8 @@
     }
     &-tech {
       @include CategItemStyle(78px);
-      position: absolute;
-      left: 749px;
-      top: 9px;
+      z-index: 2;
+      margin: 6px 10px 20px 0px;
     }
     &-container-tech {
       position: absolute;
@@ -86,9 +79,8 @@
     }
     &-travel {
       @include CategItemStyle(100px);
-      position: absolute;
-      left: 837px;
-      top: 9px;
+      z-index: 2;
+      margin: 6px 10px 20px 0px;
     }
     &-container-travel {
       position: absolute;

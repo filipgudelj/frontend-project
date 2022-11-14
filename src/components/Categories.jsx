@@ -1,4 +1,4 @@
-import "../styles/Categories.css";
+import "../styles/main.css";
 
 const Categories = () => {
   return (
