@@ -1,8 +1,10 @@
-import "./App.css";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import BigSlider from "./components/BigSlider";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 import React from "react";
+import "./App.css";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <Categories />
       <BigSlider />
+      {/* <Sidebar /> */}
+      <Footer />
     </>
   );
 }

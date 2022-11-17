@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import BigSlider1 from "../images/BigSlider1.jpg";
 import BigSlider2 from "../images/BigSlider2.jpg";
 import BigSlider3 from "../images/BigSlider3.jpg";
-import Comment from "../svgs/Comment.jsx";
+import Comment from "../svgs/Comment.svg";
 import "../styles/main.css";
 
 const BigSlider = () => {
@@ -22,7 +22,7 @@ const BigSlider = () => {
               September 26, 2013
             </h4>
             <h4 className="BigSlider-description-wrapper-comments">
-              <Comment className="comments-svg" />
+              <img src={Comment} alt="Comment" className="comments-svg" />
               &nbsp;&nbsp;22 Comments
             </h4>
           </div>
@@ -40,7 +40,7 @@ const BigSlider = () => {
               April 26, 2013
             </h4>
             <h4 className="BigSlider-description-wrapper-comments">
-              <Comment className="comments-svg" />
+              <img src={Comment} alt="Comment" className="comments-svg" />
               &nbsp;&nbsp;12 Comments
             </h4>
           </div>
@@ -58,7 +58,7 @@ const BigSlider = () => {
               July 26, 2013
             </h4>
             <h4 className="BigSlider-description-wrapper-comments">
-              <Comment className="comments-svg" />
+              <img src={Comment} alt="Comment" className="comments-svg" />
               &nbsp;&nbsp;30 Comments
             </h4>
           </div>

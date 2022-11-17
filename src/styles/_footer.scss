@@ -1,0 +1,306 @@
+.footer {
+  width: 1602px;
+  height: 934px;
+  margin-top: 19px;
+  background-color: $primary-color;
+  &-line {
+    width: 1602px;
+    height: 23px;
+    background-color: $secondary-color;
+  }
+  &-info {
+    display: flex;
+    flex-direction: row;
+    &-kenaz {
+      margin-left: 333px;
+      &-title {
+        display: flex;
+        flex-direction: row;
+        margin-top: 49.22px;
+        margin-bottom: 21.78px;
+        &-text {
+          display: flex;
+          align-items: center;
+          width: 143.56px;
+          height: 52px;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 18px;
+          color: #45b0e3;
+          font-family: "Bitter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 29.623px;
+          line-height: 52px;
+        }
+      }
+      &-subtitle {
+        @include FooterSubTitleStyle(23px);
+      }
+      &-social {
+        &-item {
+          width: 38px;
+          height: 38px;
+          margin-right: 6px;
+          &:hover {
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition: all 0.7s;
+          }
+        }
+      }
+    }
+    &-newsletter {
+      margin-left: 18px;
+      &-title {
+        @include FooterTitleStyle(163px, 25px);
+      }
+      &-subtitle {
+        @include FooterSubTitleStyle(25px);
+      }
+      &-subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 53px;
+        &-input {
+          width: 193px;
+          height: 53px;
+          margin: 0;
+          padding: 0;
+          padding-left: 21px;
+          border: none;
+          background: $primary-color-light;
+          color: $font-color-white;
+          font-family: "Varela Round";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          &:focus {
+            outline: none;
+            border-top: 1px solid $secondary-color;
+            border-bottom: 1px solid $secondary-color;
+            border-left: 1px solid $secondary-color;
+          }
+        }
+        &-btn {
+          width: 112px;
+          height: 53px;
+          padding: 0;
+          border: none;
+          color: #cccccc;
+          background: $secondary-color;
+          font-family: "Varela Round";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          &:hover {
+            cursor: pointer;
+            background: darken($color: $secondary-color, $amount: 7);
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    &-tags {
+      margin-left: 17px;
+      &-title {
+        @include FooterTitleStyle(178px, 31px);
+      }
+      &-names {
+        &-1 {
+          @include TagItemFlexStyle;
+          &-item {
+            @include TagItemStyle;
+          }
+          @include TagItemHoverStyle;
+        }
+        &-2 {
+          @include TagItemFlexStyle;
+          margin-top: 3px;
+          &-item {
+            @include TagItemStyle;
+          }
+          @include TagItemHoverStyle;
+        }
+        &-3 {
+          @include TagItemFlexStyle;
+          margin-top: 3px;
+          &-item {
+            @include TagItemStyle;
+          }
+          @include TagItemHoverStyle;
+        }
+        &-4 {
+          @include TagItemFlexStyle;
+          margin-top: 3px;
+          &-item {
+            @include TagItemStyle;
+          }
+          @include TagItemHoverStyle;
+        }
+      }
+    }
+  }
+  &-social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 84px;
+    margin-left: 333px;
+    &-featured {
+      &-title {
+        @include SocialTitleStyle(137px);
+      }
+      &-posts {
+        display: flex;
+        flex-direction: row;
+        width: 303px;
+        margin-right: 15px;
+        &-container {
+          @include SocialPostContainerStyle;
+          &-date {
+            @include SocialPostContainerDateStyle;
+          }
+          &-number {
+            @include SocialPostContainerNumberStyle;
+          }
+          &-title {
+            @include SocialPostContainerTitleStyle;
+          }
+        }
+        &-img {
+          @include SocialPostImgStyle;
+        }
+      }
+      &-line {
+        @include SocialLineStyle;
+      }
+    }
+    &-randomposts {
+      margin-left: 10px;
+      &-title {
+        @include SocialTitleStyle(197px);
+      }
+      &-posts {
+        display: flex;
+        flex-direction: row;
+        width: 303px;
+        margin-right: 15px;
+        &-container {
+          @include SocialPostContainerStyle;
+          &-date {
+            @include SocialPostContainerDateStyle;
+          }
+          &-number {
+            @include SocialPostContainerNumberStyle;
+          }
+          &-title {
+            @include SocialPostContainerTitleStyle;
+          }
+        }
+        &-img {
+          @include SocialPostImgStyle;
+        }
+      }
+      &-line {
+        @include SocialLineStyle;
+      }
+    }
+    &-twitterfeed {
+      margin-left: 6px;
+      &-title {
+        display: flex;
+        align-items: flex-end;
+        width: 181px;
+        height: 33px;
+        margin-bottom: 23px;
+        color: $font-color-white;
+        font-family: "Bitter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      &-posts {
+        &-container {
+          &-user {
+            display: flex;
+            flex-direction: row;
+            &-twitterlogo {
+              width: 24px;
+              height: 18px;
+              margin-right: 6px;
+            }
+            &-info {
+              display: flex;
+              align-items: center;
+              width: 139px;
+              height: 16px;
+              margin-top: 2px;
+              color: $tertiary-color;
+              font-family: "Bitter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+            }
+          }
+          &-text {
+            display: flex;
+            align-items: center;
+            max-width: 292px;
+            margin-top: 10.5px;
+            margin-bottom: 39.5px;
+            color: #cccccc;
+            font-family: "Varela";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+  &-thinline {
+    width: 1602px;
+    height: 1px;
+    margin-top: 25px;
+    background-color: $tertiary-color;
+    opacity: 0.3;
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 19px;
+    &-copyright {
+      display: flex;
+      align-items: flex-end;
+      width: 408px;
+      height: 14px;
+      margin-left: 333px;
+      color: #999999;
+      font-family: "Varela Round";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &-other {
+      display: flex;
+      align-items: flex-end;
+      height: 14px;
+      margin-left: 188px;
+      padding-left: 50px;
+      color: #999999;
+      font-family: "Varela Round";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+    }
+  }
+}

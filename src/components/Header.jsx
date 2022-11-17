@@ -1,5 +1,5 @@
-import Logo from "../svgs/Logo";
-import Search from "../svgs/Search";
+import Logo from "../svgs/Logo.svg";
+import Search from "../svgs/Search.svg";
 import "../styles/main.css";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     <div className="header">
       <div className="header-logo">
         <div className="header-logo-symbol">
-          <Logo className="header-logo-symbol-svg" />
+          <img src={Logo} alt="Logo" className="header-logo-symbol-svg" />
         </div>
         <div className="header-logo-name">Kenaz</div>
       </div>
@@ -17,7 +17,7 @@ const Header = () => {
           <li className="header-sub-nav-list-marketing">Marketing</li>
           <li className="header-sub-nav-list-contact">Contact</li>
           <li className="header-sub-nav-list-search">
-            <Search className="header-search-svg" />
+            <img src={Search} alt="Search" className="header-search-svg" />
           </li>
         </ul>
       </div>

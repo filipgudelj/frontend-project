@@ -17,8 +17,11 @@
       background-color: $primary-color-light;
       &:hover {
         cursor: pointer;
-        transform: scale(0.8);
-        transition: all 0.5s;
+      }
+      &:hover > .header-logo-symbol-svg {
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: all 0.8s;
       }
       &-svg {
         width: 14px;
@@ -77,8 +80,11 @@
         background-color: $primary-color-light;
         &:hover {
           cursor: pointer;
-          transform: scale(0.8);
-          transition: all 0.5s;
+        }
+        &:hover > .header-search-svg {
+          cursor: pointer;
+          transform: rotate(360deg);
+          transition: all 0.7s;
         }
         &-svg {
           width: 16px;

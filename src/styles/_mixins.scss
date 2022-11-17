@@ -16,23 +16,147 @@
   @include FontHoverStyle;
 }
 
-@mixin CategItemStyle($width) {
+@mixin CategItemStyle {
   display: flex;
-  align-items: flex-end;
-  width: $width;
-  height: 24px;
+  justify-content: center;
+  margin: 12px 0 13px 0;
   color: $font-color-white;
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  @include FontHoverStyle;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-@mixin BigSliderFontStyle {
+@mixin FooterTitleStyle($width, $margin-bottom) {
+  display: flex;
+  align-items: flex-end;
+  width: $width;
+  height: 33px;
+  margin-top: 63px;
+  margin-bottom: $margin-bottom;
+  color: #cccccc;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin FooterSubTitleStyle($margin-bottom) {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  height: 40px;
+  margin-bottom: $margin-bottom;
+  color: $tertiary-color;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin TagItemFlexStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@mixin TagItemStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+  padding: 4px 8px 4px 8px;
+  color: $tertiary-color;
+  background: $primary-color-light;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@mixin TagItemHoverStyle {
+  :hover {
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: $font-color-hover;
+    transition: all 0.5s;
+  }
+}
+
+@mixin SocialTitleStyle($width) {
+  display: flex;
+  align-items: flex-end;
+  width: $width;
+  height: 33px;
+  margin-bottom: 25px;
   color: $font-color-white;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin SocialPostContainerStyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 214px;
   font-family: "Varela Round";
   font-style: normal;
   font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin SocialPostContainerDateStyle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto";
+  color: $tertiary-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+}
+@mixin SocialPostContainerNumberStyle {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  color: $tertiary-color;
+  font-family: "Valera Round";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.04px;
+}
+@mixin SocialPostContainerTitleStyle {
+  margin-top: 4px;
+  color: $font-color-white;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+@mixin SocialPostImgStyle {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 21px;
+  margin-left: 14px;
+  border: 2px solid white;
+}
+
+@mixin SocialLineStyle {
+  width: 303px;
+  height: 1px;
+  margin-bottom: 21px;
+  background-color: $tertiary-color;
+  opacity: 0.3;
 }

@@ -13,82 +13,163 @@
     padding: 0;
     list-style: none;
     &-news {
-      @include CategItemStyle(55px);
-      z-index: 2;
-      margin: 15px 21px 14px 20px;
-    }
-    &-container-news {
-      position: absolute;
-      left: 330px;
-      top: 0px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
       width: 96px;
       height: 53px;
-      background: #299ec3;
+      &-title {
+        @include CategItemStyle;
+        width: 96px;
+        height: 24px;
+        z-index: 1;
+      }
+      &-line {
+        width: 96px;
+        height: 4px;
+        background-color: #299ec3;
+      }
+      &:hover > .categories-list-news-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-news-title {
+        margin-top: 16px;
+      }
     }
     &-business {
-      @include CategItemStyle(120px);
-      z-index: 2;
-      margin: 6px 11px 20px 20px;
-    }
-    &-container-business {
-      position: absolute;
-      left: 426px;
-      top: 47px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
       width: 132px;
-      height: 6px;
-      background: #ee6151;
+      height: 53px;
+      &-title {
+        @include CategItemStyle;
+        width: 132px;
+        height: 24px;
+        z-index: 1;
+      }
+      &-line {
+        width: 132px;
+        height: 4px;
+        background-color: #ee6151;
+      }
+      &:hover > .categories-list-business-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-business-title {
+        margin-top: 16px;
+      }
     }
     &-sport {
-      @include CategItemStyle(88px);
-      z-index: 2;
-      margin: 6px 9px 20px 0px;
-    }
-    &-container-sport {
-      position: absolute;
-      left: 555px;
-      top: 47px;
+      display: flex;
+      flex-direction: column;
       width: 100px;
-      height: 6px;
-      background: #84c14f;
+      height: 53px;
+      &-title {
+        @include CategItemStyle;
+        z-index: 1;
+        width: 100px;
+        height: 24px;
+      }
+      &-line {
+        width: 100px;
+        height: 4px;
+        background-color: #84c14f;
+      }
+      &:hover > .categories-list-sport-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-sport-title {
+        margin-top: 16px;
+      }
     }
     &-life {
-      @include CategItemStyle(68px);
-      z-index: 2;
-      margin: 6px 10px 20px 0px;
-    }
-    &-container-life {
-      position: absolute;
-      left: 653px;
-      top: 47px;
+      display: flex;
+      flex-direction: column;
       width: 81px;
-      height: 6px;
-      background: #5dcff3;
+      height: 53px;
+      &-title {
+        @include CategItemStyle;
+        z-index: 1;
+        width: 81px;
+        height: 24px;
+      }
+      &-line {
+        width: 81px;
+        height: 4px;
+        background-color: #5dcff3;
+      }
+      &:hover > .categories-list-life-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-life-title {
+        margin-top: 16px;
+      }
     }
     &-tech {
-      @include CategItemStyle(78px);
-      z-index: 2;
-      margin: 6px 10px 20px 0px;
-    }
-    &-container-tech {
-      position: absolute;
-      left: 730px;
-      top: 47px;
+      display: flex;
+      flex-direction: column;
       width: 91px;
-      height: 6px;
-      background: #fcc44d;
+      height: 53px;
+      &-title {
+        @include CategItemStyle;
+        z-index: 1;
+        width: 91px;
+        height: 24px;
+      }
+      &-line {
+        width: 91px;
+        height: 4px;
+        background-color: #fcc44d;
+      }
+      &:hover > .categories-list-tech-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-tech-title {
+        margin-top: 16px;
+      }
     }
     &-travel {
-      @include CategItemStyle(100px);
-      z-index: 2;
-      margin: 6px 10px 20px 0px;
-    }
-    &-container-travel {
-      position: absolute;
-      left: 819px;
-      top: 47px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
       width: 113px;
-      height: 6px;
-      background: #a99765;
+      height: 53px;
+      &-title {
+        @include CategItemStyle;
+        z-index: 1;
+        width: 113px;
+        height: 24px;
+      }
+      &-line {
+        width: 113px;
+        height: 4px;
+        background-color: #a99765;
+      }
+      &:hover > .categories-list-travel-line {
+        position: absolute;
+        top: 0;
+        height: 53px;
+        cursor: pointer;
+      }
+      &:hover > .categories-list-travel-title {
+        margin-top: 16px;
+      }
     }
   }
 }

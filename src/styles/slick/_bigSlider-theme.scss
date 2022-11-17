@@ -76,32 +76,43 @@ $slick-opacity-not-active: 0.25 !default;
       display: flex;
       flex-direction: row;
       height: 14px;
-      margin: 22px 0px;
+      margin: 10px 0px;
       &-date {
-        @include BigSliderFontStyle;
         display: flex;
         align-items: flex-end;
         height: 14px;
+        margin-bottom: 0;
+        color: $font-color-white;
+        font-family: "Roboto";
+        font-weight: 400;
         font-size: 12px;
         line-height: 14px;
       }
       &-comments {
-        @include BigSliderFontStyle;
         display: flex;
         flex-direction: row;
         height: 14px;
+        margin-bottom: 0;
         margin-left: 20px;
+        color: $font-color-white;
+        font-family: "Varela Round";
+        font-weight: 400;
         font-size: 12px;
         line-height: 14px;
       }
     }
     &-title {
-      @include BigSliderFontStyle;
-      max-width: 700px;
+      display: flex;
+      align-items: flex-end;
+      max-width: 600px;
       height: 92px;
-      margin: 10px 0px;
-      font-size: 46px;
-      line-height: 44px;
+      margin-bottom: 10px;
+      margin-top: 0;
+      color: $font-color-white;
+      font-family: "Bitter";
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 40.8px;
     }
     &-btn {
       width: 123px;
@@ -121,6 +132,8 @@ $slick-opacity-not-active: 0.25 !default;
   &-img {
     width: 940px;
     height: 425px;
+    object-fit: cover;
+    object-position: 10% 38%;
   }
 }
 
