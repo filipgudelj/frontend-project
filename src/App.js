@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Categories />
       <BigSlider />
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Footer />
     </>
   );
