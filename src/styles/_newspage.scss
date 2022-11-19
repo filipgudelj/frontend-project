@@ -1,0 +1,21 @@
+.newspage {
+  &-content {
+    display: flex;
+    flex-direction: row;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      width: 622px;
+      height: 2603px;
+      margin-left: 330px;
+      padding: 0;
+      &-item {
+        width: 622px;
+        height: 2603px;
+      }
+    }
+    &-sidebar {
+      margin-left: 10px;
+    }
+  }
+}

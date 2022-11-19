@@ -373,11 +373,131 @@
   margin-top: 16px;
 }
 
+.homepage-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.newspage-content {
+  display: flex;
+  flex-direction: row;
+}
+.newspage-content-list {
+  display: flex;
+  flex-direction: column;
+  width: 622px;
+  height: 2603px;
+  margin-left: 330px;
+  padding: 0;
+}
+.newspage-content-list-item {
+  width: 622px;
+  height: 2603px;
+}
+.newspage-content-sidebar {
+  margin-left: 10px;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+  margin-left: 330px;
+  padding-right: 8px;
+}
+.news-line {
+  width: 13px;
+  height: 325px;
+  background: #3677b5;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 31px;
+}
+.news-container-info {
+  display: flex;
+  flex-direction: row;
+}
+.news-container-info-title {
+  display: flex;
+  align-items: flex-end;
+  width: 94px;
+  height: 33px;
+  color: #363f48;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.news-container-info-seeall {
+  margin-left: 412px;
+  margin-top: 32px;
+}
+.news-container-info-seeall-link {
+  display: flex;
+  align-items: flex-end;
+  width: 43px;
+  height: 17px;
+  color: #3677b5;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+.news-container-info-seeall-link:hover {
+  border-bottom: 1px solid #3677b5;
+}
+.news-container-list {
+  display: flex;
+  flex-direction: row;
+}
+.news-container-list-item-img {
+  width: 170px;
+  height: 128px;
+  margin-right: 20px;
+}
+.news-container-list-item-info {
+  position: relative;
+  width: 169px;
+  height: 85px;
+}
+.news-container-list-item-info-date {
+  margin: 4px 0;
+  color: #666666;
+  font-family: "Varela Round";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.45px;
+}
+.news-container-list-item-info-title {
+  margin: 0;
+  color: #363f48;
+  font-family: "Bitter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.news-container-list-item-info-id {
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  color: #666666;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .sidebar {
   width: 303px;
   height: 1985px;
   margin-top: 19px;
-  margin-left: 968px;
+  margin-left: 16px;
 }
 .sidebar-news {
   width: 303px;
