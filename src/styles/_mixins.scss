@@ -6,29 +6,25 @@
   }
 }
 
+@mixin CategItemStyle($color) {
+  border-bottom: 4px solid $color;
+  &:hover {
+    background-color: $color;
+    transition: all 0.5s;
+  }
+  &:focus {
+    background-color: $color;
+  }
+}
+
 @mixin SubNavItemStyle {
-  color: $font-color-white;
+  color: $font-color-white-1;
   font-family: "Varela Round";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
   @include FontHoverStyle;
-}
-
-@mixin CategItemStyle {
-  display: flex;
-  justify-content: center;
-  margin: 12px 0 13px 0;
-  color: $font-color-white;
-  font-family: "Bitter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 @mixin FooterTitleStyle($width, $margin-bottom) {
@@ -38,7 +34,7 @@
   height: 33px;
   margin-top: 63px;
   margin-bottom: $margin-bottom;
-  color: #cccccc;
+  color: $font-color-white-2;
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
@@ -72,6 +68,7 @@
   justify-content: center;
   margin-right: 3px;
   padding: 4px 8px 4px 8px;
+  border: none;
   color: $tertiary-color;
   background: $primary-color-light;
   font-family: "Varela";
@@ -88,6 +85,10 @@
     color: $font-color-hover;
     transition: all 0.5s;
   }
+  :focus {
+    background-color: $secondary-color;
+    color: $font-color-hover;
+  }
 }
 
 @mixin SocialTitleStyle($width) {
@@ -96,7 +97,7 @@
   width: $width;
   height: 33px;
   margin-bottom: 25px;
-  color: $font-color-white;
+  color: $font-color-white-1;
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
@@ -137,7 +138,7 @@
 }
 @mixin SocialPostContainerTitleStyle {
   margin-top: 4px;
-  color: $font-color-white;
+  color: $font-color-white-1;
   font-family: "Bitter";
   font-style: normal;
   font-weight: 700;
@@ -150,7 +151,7 @@
   height: 70px;
   margin-bottom: 21px;
   margin-left: 14px;
-  border: 2px solid white;
+  border: 2px solid $border-color-white;
 }
 
 @mixin SocialLineStyle {

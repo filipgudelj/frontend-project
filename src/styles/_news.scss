@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: row;
   margin-top: 19px;
-  margin-left: 330px;
   padding-right: 8px;
   &-line {
     width: 13px;
     height: 325px;
-    background: #3677b5;
+    background: $blue-color;
   }
   &-container {
     display: flex;
@@ -21,7 +20,7 @@
         align-items: flex-end;
         width: 94px;
         height: 33px;
-        color: #363f48;
+        color: $font-color-gray-2;
         font-family: "Bitter";
         font-style: normal;
         font-weight: 700;
@@ -36,7 +35,7 @@
           align-items: flex-end;
           width: 43px;
           height: 17px;
-          color: #3677b5;
+          color: $blue-color;
           font-family: "Varela Round";
           font-style: normal;
           font-weight: 400;
@@ -44,7 +43,7 @@
           line-height: 17px;
           text-decoration: none;
           &:hover {
-            border-bottom: 1px solid #3677b5;
+            border-bottom: 1px solid $blue-color;
           }
         }
       }
@@ -72,7 +71,7 @@
           }
           &-title {
             margin: 0;
-            color: #363f48;
+            color: $font-color-gray-2;
             font-family: "Bitter";
             font-weight: 700;
             font-size: 14px;

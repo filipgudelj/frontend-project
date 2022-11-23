@@ -82,25 +82,35 @@ const FooterInfo = () => {
         <h2 className="footer-info-tags-title">Tags Widget</h2>
         <div className="footer-info-tags-names">
           <div className="footer-info-tags-names-1">
-            <div className="footer-info-tags-names-1-item">assueverit</div>
-            <div className="footer-info-tags-names-1-item">utroquoe</div>
-            <div className="footer-info-tags-names-1-item">probo</div>
-            <div className="footer-info-tags-names-1-item">assuev</div>
+            <button className="footer-info-tags-names-1-item">
+              assueverit
+            </button>
+            <button className="footer-info-tags-names-1-item">utroquoe</button>
+            <button className="footer-info-tags-names-1-item">probo</button>
+            <button className="footer-info-tags-names-1-item">assuev</button>
           </div>
           <div className="footer-info-tags-names-2">
-            <div className="footer-info-tags-names-2-item">probo</div>
-            <div className="footer-info-tags-names-2-item">assuevverit</div>
-            <div className="footer-info-tags-names-2-item">titl</div>
-            <div className="footer-info-tags-names-2-item">assuevverit</div>
+            <button className="footer-info-tags-names-2-item">probo</button>
+            <button className="footer-info-tags-names-2-item">
+              assuevverit
+            </button>
+            <button className="footer-info-tags-names-2-item">titl</button>
+            <button className="footer-info-tags-names-2-item">
+              assuevverit
+            </button>
           </div>
           <div className="footer-info-tags-names-3">
-            <div className="footer-info-tags-names-3-item">assuevverit</div>
-            <div className="footer-info-tags-names-3-item">utroquoe</div>
-            <div className="footer-info-tags-names-3-item">probo</div>
-            <div className="footer-info-tags-names-3-item">assuevverit</div>
+            <button className="footer-info-tags-names-3-item">
+              assuevverit
+            </button>
+            <button className="footer-info-tags-names-3-item">utroquoe</button>
+            <button className="footer-info-tags-names-3-item">probo</button>
+            <button className="footer-info-tags-names-3-item">
+              assuevverit
+            </button>
           </div>
           <div className="footer-info-tags-names-4">
-            <div className="footer-info-tags-names-4-item">utroquoe</div>
+            <button className="footer-info-tags-names-4-item">utroquoe</button>
           </div>
         </div>
       </div>

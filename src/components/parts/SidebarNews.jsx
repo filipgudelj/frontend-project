@@ -7,24 +7,23 @@ const SidebarNews = () => {
       <ul className="sidebar-news-categories">
         <li className="sidebar-news-categories-item">
           <div className="sidebar-news-categories-item-title">
-            <h3 className="sidebar-news-categories-item-title-text">Popular</h3>
-            <div className="sidebar-news-categories-item-title-line"></div>
+            <button className="sidebar-news-categories-item-title-btn">
+              Popular
+            </button>
           </div>
         </li>
         <li className="sidebar-news-categories-item">
           <div className="sidebar-news-categories-item-title">
-            <h3 className="sidebar-news-categories-item-title-text">
+            <button className="sidebar-news-categories-item-title-btn">
               Top Rated
-            </h3>
-            <div className="sidebar-news-categories-item-title-line"></div>
+            </button>
           </div>
         </li>
         <li className="sidebar-news-categories-item">
           <div className="sidebar-news-categories-item-title">
-            <h3 className="sidebar-news-categories-item-title-text">
+            <button className="sidebar-news-categories-item-title-btn">
               Comments
-            </h3>
-            <div className="sidebar-news-categories-item-title-line"></div>
+            </button>
           </div>
         </li>
       </ul>

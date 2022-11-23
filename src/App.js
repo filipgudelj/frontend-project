@@ -1,11 +1,11 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import HomePage from "./components/HomePage";
-import NewsPage from "./components/NewsPage";
+import CategoryPage from "./components/CategoryPage";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
-import "./App.css";
+import "./styles/main.css";
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Header />
       <Categories />
       <Routes>
-        <Route exact path="/news" element={<NewsPage />}></Route>
+        <Route exact path="/categorypage" element={<CategoryPage />}></Route>
+        <Route exact path="/homepage" element={<HomePage />}></Route>
         <Route exact path="/" element={<HomePage />}></Route>
       </Routes>
       <Footer />

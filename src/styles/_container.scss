@@ -4,13 +4,15 @@
 
 html,
 body {
-  height: 100%;
+  height: auto;
   width: 100%;
   margin: 0;
+  background-color: $container-color-gray;
 }
 
 #root {
   height: 100%;
   width: 1602px;
   margin: auto;
+  background-color: $container-color-white;
 }

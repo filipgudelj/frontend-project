@@ -1,13 +1,13 @@
-.newspage {
+.categorypage {
   &-content {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     &-list {
       display: flex;
       flex-direction: column;
       width: 622px;
       height: 2603px;
-      margin-left: 330px;
       padding: 0;
       &-item {
         width: 622px;

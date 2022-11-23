@@ -1,18 +1,19 @@
 .footer {
-  width: 1602px;
+  width: 100%;
   height: 934px;
-  margin-top: 19px;
+  margin-top: 39px;
   background-color: $primary-color;
   &-line {
-    width: 1602px;
+    width: 100%;
     height: 23px;
     background-color: $secondary-color;
   }
   &-info {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
     &-kenaz {
-      margin-left: 333px;
       &-title {
         display: flex;
         flex-direction: row;
@@ -71,7 +72,7 @@
           padding-left: 21px;
           border: none;
           background: $primary-color-light;
-          color: $font-color-white;
+          color: $font-color-white-1;
           font-family: "Varela Round";
           font-style: normal;
           font-weight: 400;
@@ -89,7 +90,7 @@
           height: 53px;
           padding: 0;
           border: none;
-          color: #cccccc;
+          color: $font-color-white-2;
           background: $secondary-color;
           font-family: "Varela Round";
           font-style: normal;
@@ -147,8 +148,9 @@
   &-social {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
     margin-top: 84px;
-    margin-left: 333px;
     &-featured {
       &-title {
         @include SocialTitleStyle(137px);
@@ -216,7 +218,7 @@
         width: 181px;
         height: 33px;
         margin-bottom: 23px;
-        color: $font-color-white;
+        color: $font-color-white-1;
         font-family: "Bitter";
         font-style: normal;
         font-weight: 700;
@@ -253,7 +255,7 @@
             max-width: 292px;
             margin-top: 10.5px;
             margin-bottom: 39.5px;
-            color: #cccccc;
+            color: $font-color-white-2;
             font-family: "Varela";
             font-style: normal;
             font-weight: 400;
@@ -265,7 +267,7 @@
     }
   }
   &-thinline {
-    width: 1602px;
+    width: 100%;
     height: 1px;
     margin-top: 25px;
     background-color: $tertiary-color;
@@ -274,14 +276,17 @@
   &-bottom {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 188px;
+    width: 100%;
     margin-top: 19px;
     &-copyright {
       display: flex;
       align-items: flex-end;
       width: 408px;
       height: 14px;
-      margin-left: 333px;
-      color: #999999;
+      margin-left: 40px;
+      color: $tertiary-color-light;
       font-family: "Varela Round";
       font-style: normal;
       font-weight: 400;
@@ -292,9 +297,9 @@
       display: flex;
       align-items: flex-end;
       height: 14px;
-      margin-left: 188px;
+      padding-right: 50px;
       padding-left: 50px;
-      color: #999999;
+      color: $tertiary-color-light;
       font-family: "Varela Round";
       font-style: normal;
       font-weight: 400;

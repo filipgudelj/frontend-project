@@ -13,7 +13,7 @@ const News = () => {
           <h3 className="news-container-info-title">News</h3>
           <div className="news-container-info-seeall">
             <Link
-              to="/news"
+              to="/categorypage"
               className="news-container-info-seeall-link"
               href="#"
             >

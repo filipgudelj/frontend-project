@@ -1,15 +1,20 @@
 import Logo from "../svgs/Logo.svg";
 import Search from "../svgs/Search.svg";
+import { Link } from "react-router-dom";
 import "../styles/main.css";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="header-logo">
-        <div className="header-logo-symbol">
-          <img src={Logo} alt="Logo" className="header-logo-symbol-svg" />
-        </div>
-        <div className="header-logo-name">Kenaz</div>
+        <Link to="/homepage" className="header-logo-link">
+          <div className="header-logo-symbol">
+            <img src={Logo} alt="Logo" className="header-logo-symbol-svg" />
+          </div>
+        </Link>
+        <Link to="/homepage" className="header-logo-link">
+          <div className="header-logo-name">Kenaz</div>
+        </Link>
       </div>
       <div className="header-sub-nav">
         <ul className="header-sub-nav-list">
