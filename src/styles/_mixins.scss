@@ -161,3 +161,15 @@
   background-color: $tertiary-color;
   opacity: 0.3;
 }
+
+@mixin CategPageInfoStyle {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  color: $tertiary-color;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}

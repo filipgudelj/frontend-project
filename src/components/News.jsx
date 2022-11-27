@@ -1,10 +1,10 @@
-import newsData from "../json/news.json";
+import NewsData from "../json/news.json";
 import NewsImg from "../images/News.jpg";
 import { Link } from "react-router-dom";
 import "../styles/main.css";
 
 const News = () => {
-  const slicedNewsData = newsData.slice(0, 3);
+  const slicedNewsData = NewsData.slice(0, 3);
   return (
     <div className="news">
       <div className="news-line"></div>

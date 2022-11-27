@@ -156,10 +156,10 @@
         &-event {
           width: 123px;
           height: 40px;
-          background-color: #dddddd;
+          background-color: $bg-white-color-1;
           &:hover {
             cursor: pointer;
-            background-color: #c1bfbf;
+            background-color: $bg-white-color-2;
             transition: all 0.5s;
           }
           &-text {
