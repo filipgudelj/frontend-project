@@ -34,22 +34,22 @@
           cursor: pointer;
         }
         &-1 {
-          @include CategItemStyle(#299ec3);
+          @include CategItemStyle($curious-color);
         }
         &-2 {
-          @include CategItemStyle(#ee6151);
+          @include CategItemStyle($flamingo-color);
         }
         &-3 {
-          @include CategItemStyle(#84c14f);
+          @include CategItemStyle($mantis-color);
         }
         &-4 {
-          @include CategItemStyle(#5dcff3);
+          @include CategItemStyle($turquoise-color);
         }
         &-5 {
-          @include CategItemStyle(#fcc44d);
+          @include CategItemStyle($golden-tainoi-color);
         }
         &-6 {
-          @include CategItemStyle(#a99765);
+          @include CategItemStyle($tallow-color);
         }
       }
     }

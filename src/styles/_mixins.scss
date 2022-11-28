@@ -173,3 +173,16 @@
   font-size: 12px;
   line-height: 14px;
 }
+
+@mixin SinglePageParagraphStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  color: $tertiary-color-dark;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}

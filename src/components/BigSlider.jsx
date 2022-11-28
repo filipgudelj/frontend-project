@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import NewsImg from "../images/News.jpg";
 import NewsData from "../json/news.json";
 import Comment from "../svgs/Comment.svg";
+import { Link } from "react-router-dom";
 import "../styles/main.css";
 
 const BigSlider = () => {
@@ -17,7 +18,7 @@ const BigSlider = () => {
     <Slider {...settings} className="BigSlider">
       {slicedNewsData.map((news) => {
         return (
-          <div>
+          <div key={news.id}>
             <div className="BigSlider-description">
               <div className="BigSlider-description-wrapper">
                 <h4 className="BigSlider-description-wrapper-date">
@@ -29,9 +30,11 @@ const BigSlider = () => {
                 </h4>
               </div>
               <h3 className="BigSlider-description-title">{news.title}</h3>
-              <button className="BigSlider-description-btn">
-                Read article
-              </button>
+              <Link to={`/singlepage/${news.id}`}>
+                <button className="BigSlider-description-btn">
+                  Read article
+                </button>
+              </Link>
             </div>
             <img src={NewsImg} alt="News" className="BigSlider-img"></img>
           </div>

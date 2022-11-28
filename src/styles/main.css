@@ -172,14 +172,14 @@
   cursor: pointer;
 }
 .categories-list-item-btn-1 {
-  border-bottom: 4px solid #299ec3;
+  border-bottom: 4px solid #3677b5;
 }
 .categories-list-item-btn-1:hover {
-  background-color: #299ec3;
+  background-color: #3677b5;
   transition: all 0.5s;
 }
 .categories-list-item-btn-1:focus {
-  background-color: #299ec3;
+  background-color: #3677b5;
 }
 .categories-list-item-btn-2 {
   border-bottom: 4px solid #ee6151;
@@ -237,6 +237,10 @@
   flex-direction: row;
   justify-content: center;
 }
+.homepage-content-categories {
+  display: flex;
+  flex-direction: column;
+}
 
 .categorypage-content {
   display: flex;
@@ -244,6 +248,7 @@
   justify-content: center;
 }
 .categorypage-content-list {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 622px;
@@ -356,6 +361,9 @@
   transition: all 0.5s;
 }
 .categorypage-content-list-pagination {
+  position: absolute;
+  bottom: 188px;
+  left: 30px;
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -379,6 +387,86 @@
 }
 .categorypage-content-sidebar {
   margin-left: 10px;
+}
+
+.singlepage-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 158px;
+}
+.singlepage-header-img {
+  position: relative;
+  width: 940px;
+  height: 588px;
+  background: linear-gradient(to bottom, rgba(80, 68, 18, 0.1) 60%, rgba(238, 225, 225, 0.3) 65%, rgba(238, 225, 225, 0.5) 70%, rgb(238, 225, 225) 80%, rgb(242, 237, 237) 100%, transparent), url("../images/SinglePageHeader.jpg");
+}
+.singlepage-header-img-date {
+  position: absolute;
+  bottom: 147px;
+  left: 30px;
+  display: flex;
+  align-items: flex-end;
+  color: #222222;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.45px;
+}
+.singlepage-header-img-title {
+  position: absolute;
+  bottom: 38px;
+  left: 30px;
+  display: flex;
+  align-items: flex-end;
+  max-width: 750px;
+  color: #222222;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52.8px;
+}
+.singlepage-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.singlepage-content-info {
+  width: 623px;
+}
+.singlepage-content-info-first-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  color: #444444;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.singlepage-content-info-first-img {
+  width: 620px;
+  height: 357px;
+}
+.singlepage-content-info-second-paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  color: #444444;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.singlepage-content-info-second-img {
+  width: 607px;
+  height: 42px;
+  margin-left: 8px;
 }
 
 .news {
@@ -464,6 +552,100 @@
   line-height: 16.8px;
 }
 .news-container-list-item-info-id {
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  color: #666666;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sport {
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+  padding-right: 8px;
+}
+.sport-line {
+  width: 13px;
+  height: 325px;
+  background: #84c14f;
+}
+.sport-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 31px;
+}
+.sport-container-info {
+  display: flex;
+  flex-direction: row;
+}
+.sport-container-info-title {
+  display: flex;
+  align-items: flex-end;
+  width: 94px;
+  height: 33px;
+  color: #363f48;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.sport-container-info-seeall {
+  margin-left: 412px;
+  margin-top: 32px;
+}
+.sport-container-info-seeall-link {
+  display: flex;
+  align-items: flex-end;
+  width: 43px;
+  height: 17px;
+  color: #3677b5;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+.sport-container-info-seeall-link:hover {
+  border-bottom: 1px solid #3677b5;
+}
+.sport-container-list {
+  display: flex;
+  flex-direction: row;
+}
+.sport-container-list-item-img {
+  width: 170px;
+  height: 128px;
+  margin-right: 20px;
+}
+.sport-container-list-item-info {
+  position: relative;
+  width: 169px;
+  height: 85px;
+}
+.sport-container-list-item-info-date {
+  margin: 4px 0;
+  color: #666666;
+  font-family: "Varela Round";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.45px;
+}
+.sport-container-list-item-info-title {
+  margin: 0;
+  color: #363f48;
+  font-family: "Bitter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.sport-container-list-item-info-id {
   position: absolute;
   top: -11px;
   right: 0px;

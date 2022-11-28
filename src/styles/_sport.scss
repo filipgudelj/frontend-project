@@ -1,4 +1,4 @@
-.news {
+.sport {
   display: flex;
   flex-direction: row;
   margin-top: 19px;
@@ -6,7 +6,7 @@
   &-line {
     width: 13px;
     height: 325px;
-    background: $curious-color;
+    background: $mantis-color;
   }
   &-container {
     display: flex;

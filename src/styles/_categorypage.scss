@@ -4,6 +4,12 @@
     flex-direction: row;
     justify-content: center;
     &-list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 622px;
+      height: 2603px;
+      padding: 0;
       &-title {
         display: flex;
         align-items: flex-end;
@@ -16,11 +22,6 @@
         font-size: 24px;
         line-height: 29px;
       }
-      display: flex;
-      flex-direction: column;
-      width: 622px;
-      height: 2603px;
-      padding: 0;
       &-item {
         width: 622px;
         margin-bottom: 92px;
@@ -91,6 +92,9 @@
         }
       }
       &-pagination {
+        position: absolute;
+        bottom: 188px;
+        left: 30px;
         display: flex;
         flex-direction: row;
         gap: 4px;

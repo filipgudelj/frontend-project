@@ -5,6 +5,7 @@ import NewsImg from "../images/News.jpg";
 import Date from "../svgs/Date.svg";
 import Pagination from "./parts/Pagination";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/main.css";
 
 const Categorypage = () => {
@@ -52,9 +53,11 @@ const Categorypage = () => {
                     <p className="categorypage-content-list-item-info-2-paragraph-text">
                       {news["first-paragraph"]}
                     </p>
-                    <button className="categorypage-content-list-item-info-2-paragraph-btn">
-                      Read article
-                    </button>
+                    <Link to={`/singlepage/${news.id}`}>
+                      <button className="categorypage-content-list-item-info-2-paragraph-btn">
+                        Read article
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

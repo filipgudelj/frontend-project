@@ -33,13 +33,13 @@
             line-height: 17px;
             &:hover {
               cursor: pointer;
-              border-bottom: 1px solid $yellow-color;
-              color: $yellow-color;
+              border-bottom: 1px solid $golden-tainoi-color;
+              color: $golden-tainoi-color;
               transition: all 0.5s;
             }
             &:focus {
-              border-bottom: 1px solid $yellow-color;
-              color: $yellow-color;
+              border-bottom: 1px solid $golden-tainoi-color;
+              color: $golden-tainoi-color;
             }
           }
         }
