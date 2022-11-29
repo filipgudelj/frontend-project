@@ -1,7 +1,9 @@
 import NewsData from "../json/news.json";
 import Sidebar from "./Sidebar";
 import SinglePageInfo from "../images/SinglePageInfo.jpg";
-import SInglePageSocial from "../images/SinglePageSocial.png";
+import SinglePageSocial from "../images/SinglePageSocial.png";
+import Author from "../images/Author.jpg";
+import CommentsSection from "./parts/CommentsSection";
 import { useParams } from "react-router-dom";
 import "../styles/main.css";
 
@@ -10,7 +12,6 @@ const SinglePage = () => {
   const foundNews = NewsData.find((obj) => {
     return obj.id === id;
   });
-  console.log(foundNews);
   return (
     <div className="singlepage">
       <div className="singlepage-header">
@@ -33,10 +34,31 @@ const SinglePage = () => {
             {foundNews["second-paragraph"]}
           </p>
           <img
-            src={SInglePageSocial}
+            src={SinglePageSocial}
             alt="Social"
             className="singlepage-content-info-second-img"
           ></img>
+          <div className="singlepage-content-info-author">
+            <h3 className="singlepage-content-info-author-title">
+              About the Author
+            </h3>
+            <div className="singlepage-content-info-author-details">
+              <img
+                src={Author}
+                alt="Author"
+                className="singlepage-content-info-author-details-img"
+              ></img>
+              <p className="singlepage-content-info-author-details-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae quos voluptatibus, animi sunt consectetur blanditiis
+                sapiente a nulla voluptatem alias distinctio optio? Commodi
+                tenetur laboriosam iste aperiam libero delectus quae fugit nulla
+                voluptates, est sed necessitatibus sunt illo. Magni, accusamus!
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <CommentsSection />
         </div>
         <Sidebar className="singlepage-content-sidebar" />
       </div>

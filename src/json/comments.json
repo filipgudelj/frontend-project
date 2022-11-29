@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "author": "Matt Adams",
+    "email": "matt@gmail.com",
+    "date": "Jan 2nd, 2012 2:35 pm",
+    "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officia ex saepe at omnis laboriosam perspiciatis veniam eligendi nostrum modi inventore dolor molestias provident reiciendis?"
+  },
+  {
+    "id": "2",
+    "author": "John Toews",
+    "email": "john@gmail.com",
+    "date": "Jan 2nd, 2012 2:35 pm",
+    "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officia ex saepe at omnis laboriosam perspiciatis veniam eligendi nostrum modi inventore dolor molestias provident reiciendis?"
+  },
+  {
+    "id": "3",
+    "author": "Andrew Enns",
+    "email": "andrew@gmail.com",
+    "date": "Jan 2nd, 2012 2:35 pm",
+    "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, officia ex saepe at omnis laboriosam perspiciatis veniam eligendi nostrum modi inventore dolor molestias provident reiciendis?"
+  }
+]

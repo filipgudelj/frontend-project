@@ -468,6 +468,218 @@
   height: 42px;
   margin-left: 8px;
 }
+.singlepage-content-info-author {
+  padding-left: 31px;
+}
+.singlepage-content-info-author-title {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  margin-top: 175px;
+  margin-bottom: 30px;
+  color: #363f48;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.singlepage-content-info-author-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.singlepage-content-info-author-details-img {
+  width: 110px;
+  height: 110px;
+}
+.singlepage-content-info-author-details-text {
+  display: flex;
+  align-items: center;
+  color: #444444;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments {
+  padding-left: 31px;
+}
+.singlepage-content-info-comments-title {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 64px;
+  margin-bottom: 43px;
+  color: #363f48;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.singlepage-content-info-comments-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 47.5px;
+}
+.singlepage-content-info-comments-item-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: rgb(204, 204, 204);
+  border: 3px solid rgb(204, 204, 204);
+}
+.singlepage-content-info-comments-item-bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 3px solid white;
+}
+.singlepage-content-info-comments-item-author-details {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.singlepage-content-info-comments-item-author-details-name {
+  display: flex;
+  align-items: center;
+  color: #4d4382;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-item-author-details-date {
+  display: flex;
+  align-items: center;
+  color: #666666;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-item-author-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 12.5px;
+  color: #444444;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-item-reply {
+  position: absolute;
+  top: 0;
+  right: 31px;
+  display: flex;
+  align-items: flex-end;
+  color: #4d4382;
+  text-align: right;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.singlepage-content-info-comments-item-reply:hover {
+  cursor: pointer;
+}
+.singlepage-content-info-comments-add {
+  display: flex;
+  flex-direction: column;
+}
+.singlepage-content-info-comments-add-title {
+  display: flex;
+  align-items: flex-end;
+  color: #363f48;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.singlepage-content-info-comments-add-text {
+  display: flex;
+  align-items: center;
+  margin-top: 12.5px;
+  margin-bottom: 25.5px;
+  color: #444444;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-add-text-input {
+  width: 303px;
+  height: 43px;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  border: none;
+  background-color: #dddddd;
+  color: #666666;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.singlepage-content-info-comments-add-text-input:focus {
+  outline: none;
+  border: 1px solid #4d4382;
+}
+.singlepage-content-info-comments-add-textarea-input {
+  width: 562px;
+  height: 187px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+  padding-left: 18px;
+  border: none;
+  resize: none;
+  background-color: #dddddd;
+  color: #666666;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.singlepage-content-info-comments-add-textarea-input:focus {
+  outline: none;
+  border: 1px solid #4d4382;
+}
+.singlepage-content-info-comments-add-btn {
+  width: 153px;
+  height: 53px;
+  margin-bottom: 75px;
+  border: none;
+  background: #4d4382;
+  color: #ffffff;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.singlepage-content-info-comments-add-btn:hover {
+  cursor: pointer;
+  background-color: #433a71;
+  transition: all 0.5s;
+}
 
 .news {
   display: flex;
