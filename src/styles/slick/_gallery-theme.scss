@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  } @else {
+    @return url($slick-loader-path + $url);
+  }
+}
+
+@function slick-font-url($url) {
+  @if function-exists(font-url) {
+    @return font-url($url);
+  } @else {
+    @return url($slick-font-path + $url);
+  }
+}
+
+.gallery {
+  width: 940px;
+  height: 425px;
+  margin: auto;
+  margin-top: 158px;
+  &-img {
+    width: 940px;
+    height: 425px;
+    object-fit: cover;
+    object-position: 10% 38%;
+  }
+  &-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-top: 140px;
+    margin-left: 430px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 170px;
+    z-index: 2;
+    display: block;
+    width: 32px;
+    height: 50px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: transparent;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    line-height: 0px;
+    font-size: 0px;
+    &.slick-disabled:before {
+      opacity: $slick-opacity-not-active;
+    }
+    &:before {
+      font-family: $slick-font-family;
+      font-size: 20px;
+      line-height: 1;
+      color: $slick-arrow-color;
+      opacity: $slick-opacity-default;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+  .slick-prev {
+    bottom: 195px;
+    left: 28px;
+    background-image: url("../svgs/PrevBtn.svg");
+  }
+  .slick-next {
+    bottom: 195px;
+    right: 28px;
+    background-image: url("../svgs/NextBtn.svg");
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 30px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 0px;
+    z-index: 100;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      height: 120px;
+      width: 120px;
+      margin: 0 5px 20px 5px;
+      padding: 0;
+      cursor: pointer;
+      button {
+        display: block;
+        height: 120px;
+        width: 120px;
+        padding: 5px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 0px rgba(181, 191, 185, 0.3);
+        background-image: url("../images/News.jpg");
+        background-size: cover;
+        color: transparent;
+        outline: none;
+        line-height: 0px;
+        font-size: 0px;
+        &:hover,
+        &:focus {
+          outline: none;
+          &:before {
+            opacity: $slick-opacity-on-hover;
+          }
+        }
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: $slick-dot-character;
+          width: 20px;
+          height: 20px;
+          font-family: $slick-font-family;
+          font-size: $slick-dot-size;
+          line-height: 20px;
+          text-align: center;
+          color: $slick-dot-color;
+          opacity: $slick-opacity-not-active;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+      &.slick-active button:before {
+        color: $slick-dot-color-active;
+        opacity: $slick-opacity-default;
+      }
+    }
+  }
+}

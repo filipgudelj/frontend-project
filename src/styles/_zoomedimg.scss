@@ -1,0 +1,42 @@
+.zoomedimg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  &-wrapper {
+    position: relative;
+    width: 72%;
+    height: 80%;
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+    &-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      &:hover {
+        cursor: pointer;
+        outline: none;
+      }
+      &-zoomout {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

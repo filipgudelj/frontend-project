@@ -6,6 +6,10 @@
     &-categories {
       display: flex;
       flex-direction: column;
+      &-sliders {
+        display: flex;
+        flex-direction: row;
+      }
     }
   }
 }
