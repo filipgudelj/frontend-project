@@ -12,11 +12,7 @@ const Categories = () => {
               <Link to="/categorypage">
                 <button
                   key={category.id}
-                  className={
-                    "categories-list-item-btn-" +
-                    category.id +
-                    " categories-list-item-btn"
-                  }
+                  className={`categories-list-item-btn categories-list-item-btn-${category.color}`}
                 >
                   <div className="categories-list-item-btn-text">
                     {category.name}

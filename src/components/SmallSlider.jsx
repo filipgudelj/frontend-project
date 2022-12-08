@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import NewsImg from "../images/News.jpg";
+import SecondNewsImg from "../images/SecondNews.jpg";
 import NewsData from "../json/news.json";
 import "../styles/main.css";
 
@@ -23,11 +24,19 @@ const SmallSlider = ({ name, margin }) => {
           {NewsData.map((news) => {
             return (
               <div className="SmallSlider-content-slider-item" key={news.id}>
-                <img
-                  src={NewsImg}
-                  alt="News"
-                  className="SmallSlider-content-slider-item-img"
-                />
+                {news.id === "2" ? (
+                  <img
+                    src={SecondNewsImg}
+                    alt="News"
+                    className="SmallSlider-content-slider-item-img"
+                  />
+                ) : (
+                  <img
+                    src={NewsImg}
+                    alt="News"
+                    className="SmallSlider-content-slider-item-img"
+                  />
+                )}
                 <p className="SmallSlider-content-slider-item-date">
                   {news.date}
                 </p>

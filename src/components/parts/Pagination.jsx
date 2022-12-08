@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Pagination = ({ newsPerPage, totalNews, paginate }) => {
   const pageNumbers = [];
@@ -15,12 +16,14 @@ const Pagination = ({ newsPerPage, totalNews, paginate }) => {
             className="categorypage-content-list-pagination-item"
             key={number}
           >
-            <button
-              className="categorypage-content-list-pagination-item-btn"
-              onClick={() => paginate(number)}
-            >
-              {number}
-            </button>
+            <HashLink to="#categorypage-title" smooth>
+              <button
+                className="categorypage-content-list-pagination-item-btn"
+                onClick={() => paginate(number)}
+              >
+                {number}
+              </button>
+            </HashLink>
           </div>
         );
       })}

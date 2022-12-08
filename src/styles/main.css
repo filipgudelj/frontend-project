@@ -172,64 +172,64 @@
 .categories-list-item-btn:hover {
   cursor: pointer;
 }
-.categories-list-item-btn-1 {
+.categories-list-item-btn-curious {
   border-bottom: 4px solid #3677b5;
 }
-.categories-list-item-btn-1:hover {
+.categories-list-item-btn-curious:hover {
   background-color: #3677b5;
   transition: all 0.5s;
 }
-.categories-list-item-btn-1:focus {
+.categories-list-item-btn-curious:focus {
   background-color: #3677b5;
 }
-.categories-list-item-btn-2 {
+.categories-list-item-btn-flamingo {
   border-bottom: 4px solid #ee6151;
 }
-.categories-list-item-btn-2:hover {
+.categories-list-item-btn-flamingo:hover {
   background-color: #ee6151;
   transition: all 0.5s;
 }
-.categories-list-item-btn-2:focus {
+.categories-list-item-btn-flamingo:focus {
   background-color: #ee6151;
 }
-.categories-list-item-btn-3 {
+.categories-list-item-btn-mantis {
   border-bottom: 4px solid #84c14f;
 }
-.categories-list-item-btn-3:hover {
+.categories-list-item-btn-mantis:hover {
   background-color: #84c14f;
   transition: all 0.5s;
 }
-.categories-list-item-btn-3:focus {
+.categories-list-item-btn-mantis:focus {
   background-color: #84c14f;
 }
-.categories-list-item-btn-4 {
+.categories-list-item-btn-turquoise {
   border-bottom: 4px solid #5dcff3;
 }
-.categories-list-item-btn-4:hover {
+.categories-list-item-btn-turquoise:hover {
   background-color: #5dcff3;
   transition: all 0.5s;
 }
-.categories-list-item-btn-4:focus {
+.categories-list-item-btn-turquoise:focus {
   background-color: #5dcff3;
 }
-.categories-list-item-btn-5 {
+.categories-list-item-btn-golden {
   border-bottom: 4px solid #fcc44d;
 }
-.categories-list-item-btn-5:hover {
+.categories-list-item-btn-golden:hover {
   background-color: #fcc44d;
   transition: all 0.5s;
 }
-.categories-list-item-btn-5:focus {
+.categories-list-item-btn-golden:focus {
   background-color: #fcc44d;
 }
-.categories-list-item-btn-6 {
+.categories-list-item-btn-tallow {
   border-bottom: 4px solid #a99765;
 }
-.categories-list-item-btn-6:hover {
+.categories-list-item-btn-tallow:hover {
   background-color: #a99765;
   transition: all 0.5s;
 }
-.categories-list-item-btn-6:focus {
+.categories-list-item-btn-tallow:focus {
   background-color: #a99765;
 }
 
@@ -258,12 +258,13 @@
   flex-direction: column;
   width: 622px;
   height: 2603px;
+  margin-top: 19px;
   padding: 0;
+  background-color: white;
 }
 .categorypage-content-list-title {
   display: flex;
   align-items: flex-end;
-  margin-top: 24px;
   margin-bottom: 36px;
   color: #363f48;
   font-family: "Bitter";
@@ -438,7 +439,8 @@
   justify-content: center;
 }
 .singlepage-content-info {
-  width: 623px;
+  width: 620px;
+  background-color: white;
 }
 .singlepage-content-info-first-paragraph {
   display: flex;
@@ -586,12 +588,72 @@
   font-size: 13px;
   line-height: 20px;
 }
+.singlepage-content-info-comments-item-author-reply {
+  padding-left: 30px;
+}
+.singlepage-content-info-comments-item-author-reply-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.singlepage-content-info-comments-item-author-reply-container-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  background-color: rgb(204, 204, 204);
+  border: 3px solid rgb(204, 204, 204);
+}
+.singlepage-content-info-comments-item-author-reply-container-bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 3px solid white;
+}
+.singlepage-content-info-comments-item-author-reply-container-info-you {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.singlepage-content-info-comments-item-author-reply-container-info-you-name {
+  color: #4d4382;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-item-author-reply-container-info-you-date {
+  color: #666666;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 20px;
+}
+.singlepage-content-info-comments-item-author-reply-container-info-text {
+  max-width: 400px;
+  margin-top: 4px;
+  color: #444444;
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.5px;
+  line-height: 20px;
+}
 .singlepage-content-info-comments-item-reply {
   position: absolute;
   top: 0;
   right: 31px;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  border: none;
   color: #4d4382;
   text-align: right;
   font-family: "Varela Round";
@@ -606,6 +668,41 @@
 .singlepage-content-info-comments-add {
   display: flex;
   flex-direction: column;
+  /* &-exit {
+    width: 50px;
+    height: 43px;
+    border: none;
+    background-color: $secondary-color;
+    color: $font-color-white-1;
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    &:hover {
+      cursor: pointer;
+      background-color: darken($secondary-color, 5%);
+      transition: all 0.5s;
+    }
+  } */
+}
+.singlepage-content-info-comments-add-reply {
+  width: 303px;
+  height: 43px;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  border: none;
+  background-color: #dddddd;
+  color: #666666;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.singlepage-content-info-comments-add-reply:focus {
+  outline: none;
+  border: 1px solid #4d4382;
 }
 .singlepage-content-info-comments-add-title {
   display: flex;
@@ -691,6 +788,7 @@
   flex-direction: row;
   margin-top: 19px;
   padding-right: 8px;
+  background-color: white;
 }
 .news-line {
   width: 13px;
@@ -787,6 +885,7 @@
   flex-direction: row;
   margin-top: 19px;
   padding-right: 8px;
+  background-color: white;
 }
 .sport-line {
   width: 13px;
@@ -884,6 +983,7 @@
   margin-top: 159px;
   padding-right: 8px;
   height: 325px;
+  background-color: white;
 }
 .business-line {
   width: 13px;
@@ -980,6 +1080,7 @@
   width: 625px;
   height: 325px;
   margin-top: 167px;
+  background-color: white;
 }
 .NewsCarousel-line {
   width: 13px;
@@ -1163,6 +1264,7 @@
   width: 306px;
   height: 325px;
   margin-top: 17px;
+  background-color: white;
 }
 .SmallSlider-line {
   width: 13px;
@@ -1569,6 +1671,7 @@
   height: 1985px;
   margin-top: 19px;
   margin-left: 16px;
+  background-color: white;
 }
 .sidebar-news {
   width: 303px;
@@ -2612,12 +2715,11 @@ body {
   height: auto;
   width: 100%;
   margin: 0;
-  background-color: #595959;
 }
 
 #root {
   height: 100%;
-  width: 1602px;
+  width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: #eeeeee;
 }/*# sourceMappingURL=main.css.map */

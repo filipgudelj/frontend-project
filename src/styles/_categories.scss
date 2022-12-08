@@ -33,22 +33,22 @@
         &:hover {
           cursor: pointer;
         }
-        &-1 {
+        &-curious {
           @include CategItemStyle($curious-color);
         }
-        &-2 {
+        &-flamingo {
           @include CategItemStyle($flamingo-color);
         }
-        &-3 {
+        &-mantis {
           @include CategItemStyle($mantis-color);
         }
-        &-4 {
+        &-turquoise {
           @include CategItemStyle($turquoise-color);
         }
-        &-5 {
+        &-golden {
           @include CategItemStyle($golden-tainoi-color);
         }
-        &-6 {
+        &-tallow {
           @include CategItemStyle($tallow-color);
         }
       }

@@ -51,7 +51,8 @@
     flex-direction: row;
     justify-content: center;
     &-info {
-      width: 623px;
+      width: 620px;
+      background-color: $bg-white-color-3;
       &-first-paragraph {
         @include SinglePageParagraphStyle;
       }
@@ -179,14 +180,76 @@
               font-size: 13px;
               line-height: 20px;
             }
+            &-reply {
+              padding-left: 30px;
+              &-container {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                &-bg {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 48px;
+                  height: 48px;
+                  margin-top: 10px;
+                  background-color: rgb(204, 204, 204);
+                  border: 3px solid rgb(204, 204, 204);
+                  &-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46px;
+                    height: 46px;
+                    border: 3px solid $border-color-white;
+                  }
+                }
+                &-info {
+                  &-you {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    &-name {
+                      color: $secondary-color;
+                      font-family: "Bitter";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 15px;
+                      line-height: 20px;
+                    }
+                    &-date {
+                      color: $tertiary-color;
+                      font-family: "Varela";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 9px;
+                      line-height: 20px;
+                    }
+                  }
+                  &-text {
+                    max-width: 400px;
+                    margin-top: 4px;
+                    color: $tertiary-color-dark;
+                    font-family: "Varela";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11.5px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
           }
           &-reply {
             position: absolute;
             top: 0;
             right: 31px;
             display: flex;
-            align-items: flex-end;
-            color: #4d4382;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            color: $secondary-color;
             text-align: right;
             font-family: "Varela Round";
             font-style: normal;
@@ -201,6 +264,41 @@
         &-add {
           display: flex;
           flex-direction: column;
+          &-reply {
+            width: 303px;
+            height: 43px;
+            margin-bottom: 8px;
+            padding-left: 18px;
+            border: none;
+            background-color: $bg-white-color-1;
+            color: $tertiary-color;
+            font-family: "Varela Round";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            &:focus {
+              outline: none;
+              border: 1px solid $secondary-color;
+            }
+          }
+          /* &-exit {
+            width: 50px;
+            height: 43px;
+            border: none;
+            background-color: $secondary-color;
+            color: $font-color-white-1;
+            font-family: "Varela Round";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            &:hover {
+              cursor: pointer;
+              background-color: darken($secondary-color, 5%);
+              transition: all 0.5s;
+            }
+          } */
           &-title {
             display: flex;
             align-items: flex-end;

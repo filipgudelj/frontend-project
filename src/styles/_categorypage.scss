@@ -9,11 +9,12 @@
       flex-direction: column;
       width: 622px;
       height: 2603px;
+      margin-top: 19px;
       padding: 0;
+      background-color: $bg-white-color-3;
       &-title {
         display: flex;
         align-items: flex-end;
-        margin-top: 24px;
         margin-bottom: 36px;
         color: $font-color-gray-2;
         font-family: "Bitter";

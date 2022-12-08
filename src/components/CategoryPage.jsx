@@ -24,7 +24,12 @@ const Categorypage = () => {
       <BigSlider />
       <div className="categorypage-content">
         <div className="categorypage-content-list">
-          <div className="categorypage-content-list-title">News</div>
+          <div
+            className="categorypage-content-list-title"
+            id="categorypage-title"
+          >
+            News
+          </div>
           {currentNews.map((news) => {
             return (
               <div className="categorypage-content-list-item" key={news.id}>

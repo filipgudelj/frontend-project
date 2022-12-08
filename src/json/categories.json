@@ -1,26 +1,32 @@
 [
   {
     "id": 1,
-    "name": "NEWS"
+    "name": "NEWS",
+    "color": "curious"
   },
   {
     "id": 2,
-    "name": "BUSINESS"
+    "name": "BUSINESS",
+    "color": "flamingo"
   },
   {
     "id": 3,
-    "name": "SPORT"
+    "name": "SPORT",
+    "color": "mantis"
   },
   {
     "id": 4,
-    "name": "LIFE"
+    "name": "LIFE",
+    "color": "turquoise"
   },
   {
     "id": 5,
-    "name": "TECH"
+    "name": "TECH",
+    "color": "golden"
   },
   {
     "id": 6,
-    "name": "TRAVEL"
+    "name": "TRAVEL",
+    "color": "tallow"
   }
 ]

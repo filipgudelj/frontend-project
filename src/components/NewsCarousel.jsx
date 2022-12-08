@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import NewsImg from "../images/News.jpg";
+import SecondNewsImg from "../images/SecondNews.jpg";
 import NewsData from "../json/news.json";
 import "../styles/main.css";
 
@@ -20,11 +21,19 @@ const NewsCarousel = () => {
           {NewsData.map((news) => {
             return (
               <div className="NewsCarousel-content-slider-item" key={news.id}>
-                <img
-                  src={NewsImg}
-                  alt="News"
-                  className="NewsCarousel-content-slider-item-img"
-                />
+                {news.id === "3" ? (
+                  <img
+                    src={SecondNewsImg}
+                    alt="News"
+                    className="NewsCarousel-content-slider-item-img"
+                  />
+                ) : (
+                  <img
+                    src={NewsImg}
+                    alt="News"
+                    className="NewsCarousel-content-slider-item-img"
+                  />
+                )}
                 <p className="NewsCarousel-content-slider-item-date">
                   {news.date}
                 </p>

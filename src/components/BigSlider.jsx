@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import NewsImg from "../images/News.jpg";
+import SecondNewsImg from "../images/SecondNews.jpg";
 import NewsData from "../json/news.json";
 import Comment from "../svgs/Comment.svg";
 import { Link } from "react-router-dom";
@@ -36,7 +37,11 @@ const BigSlider = () => {
                 </button>
               </Link>
             </div>
-            <img src={NewsImg} alt="News" className="BigSlider-img"></img>
+            {news.id === "2" ? (
+              <img src={SecondNewsImg} alt="News" className="BigSlider-img" />
+            ) : (
+              <img src={NewsImg} alt="News" className="BigSlider-img" />
+            )}
           </div>
         );
       })}
